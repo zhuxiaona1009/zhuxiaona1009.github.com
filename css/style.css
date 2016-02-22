@@ -55,9 +55,8 @@ h4 {
   }
 
 h5 {
-  
   font-size: 14px;
-  line-height:25px;
+  line-height:20px;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
   }
@@ -124,7 +123,7 @@ li, ul {
   color: inherit;
   background: none;
   cursor: pointer;
-  padding: 25px 80px;
+  padding: 15px 60px;
   display: inline-block;
   margin: 5px 5px;
   text-transform: uppercase;
@@ -135,6 +134,7 @@ li, ul {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+  text-align:center;
   }
 
 .btn:after {
@@ -147,9 +147,7 @@ li, ul {
   }
 
 /* Pseudo elements for icons */
-.btn:before,
-.fa-plus:after,
-.fa-download:before {
+.btn:before{
   font-family: 'FontAwesome';
   speak: none;
   font-style: normal;
@@ -162,72 +160,26 @@ li, ul {
   }
 
 /* Learn Button */
-.btn-learn {
+.btn-c{
   background: #666666;
   color: #fff;
   }
 
-.btn-learn:hover {
+.btn-c:hover {
   background: #818181;
   color: #f3f3f3;
   }
 
-.btn-learn:active {
-  background: #818181;
-  top: 2px;
-  }
-
-.btn-learn:before {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  line-height: 3;
-  font-size: 140%;
-  width: 60px;
-  }
-
-.btn-learna {
-  padding: 20px 40px 20px 90px;
-  }
-
-.btn-learna:before {
-  background: rgba(0,0,0,0.05);
-  }
-
-/* Download Button */
-.btn-download {
+.btn-e {
   background: #209196;
   color: #fff;
   }
 
-.btn-download:hover {
+.btn-e:hover {
   background:#03a4aa;
   color: #f3f3f3;
   }
 
-.btn-download:active {
-  background: #03a4aa;
-  top: 2px;
-  }
-
-.btn-download:before {
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  line-height: 3;
-  font-size: 140%;
-  width: 60px;
-  }
-
-.btn-downloada {
-  padding: 20px 40px 20px 100px;
-  }
-
-.btn-downloada:before {
-  background: rgba(0,0,0,0.05);
-  }
 
 
 /*--------------------------
@@ -373,26 +325,18 @@ li, ul {
   }
 
 #home .slider1{
-  background-image: url(../img/sliders/1.jpg); height:750px;
+  background:red;
   }
 
 #home .slider2{
-  background-image: url(../img/sliders/2.jpg); height:750px;
-  }
-
-#home .slider3{
-  background-image: url(../img/sliders/3.jpg); height:750px;
-  }
-
-#home .slider4{
-  background-image: url(../img/sliders/4.jpg); height:750px;
+  background:blue;
   }
 
 #home .phone1{
   background-image: url(../img/sliders/phone1.png);
   background-repeat: no-repeat;
-  background-position: center;
-  height: 350px;
+  background-position: top;
+  height: 700px;
   width: 100%;
   }
 
@@ -400,23 +344,7 @@ li, ul {
   background-image: url(../img/sliders/phone2.png);
   background-repeat: no-repeat;
   background-position: top;
-  height: 750px;
-  width: 100%;
-  }
-
-#home .phone3{
-  background-image: url(../img/sliders/phone3.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 750px;
-  width: 100%;
-  }
-
-#home .phone4{
-  background-image: url(../img/sliders/phone4.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  height: 750px;
+  height: 700px;
   width: 100%;
   }
 
@@ -429,7 +357,7 @@ li, ul {
   text-align: center;
   color: #fff;
   height: auto;
-  min-height: 710px;
+  min-height: 700px;
   max-height: 2000px;
   }
 
@@ -537,85 +465,12 @@ li, ul {
   left: auto;
   position: relative;
   }
-
-/*--------------------------
----------- ABOUT -----------
---------------------------*/
-
-#about{
-  width: 100%;
-  height: auto;
-  min-height: 690px;
-  max-height: 2500px;
-  background-size: cover;
-  color: #888888;
-  padding-top: 20px;
-  padding-bottom: 80px;
-  }
-
-.about h2 {
-  font-weight: 600;
-  font-size: 3.5em;
-  text-align: center;
-  color: #888888;
-  }
-
-.about h2 span {
-  display: block;
-  font-size: 40%;
-  font-weight: 300;
-  color: #888888;
-  }
-
-#about .list{
-  padding: 20px 10px;
-  }
-
-#about .list:hover {
-  background: #f3f3f3;
-  cursor: pointer;
-  clear: both;
-  }
-
-#about .list:hover > h5,
-#about .list:hover > .f-icon {
-  color: #209196;
-  cursor: pointer;
-  -webkit-transition: 0.3s all ease;
-  -moz-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  -ms-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-  }
-
-#about .list h5 {
-  font-weight: 900;
-  font-size: 1.2em;
-  text-align: left;
-  color: #c0c0c0;
-  }
-
-.flat-icons{
-  display: inline-block;
-  float: left;
-  padding: 20px 10px;
-  margin-top: 20px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  clear: left;
-  }
-
-
-/*--------------------------
---------- FEATURES ---------
-/*--------------------------
---------- THE TEAM ---------
---------------------------*/
+/**/
 #project {
   background: #f3f3f3;
   width: 100%;
   height: auto;
-  min-height: 690px;
+  min-height: 750px;
   max-height: 2500px;
   background-size: cover;
   color: #ffffff;
@@ -655,6 +510,8 @@ li, ul {
 .grid figure {
   position: relative;
   }
+.grid figcaption{
+	height:20%;}
 
 .grid figure img {
   max-width: 100%;
@@ -662,29 +519,28 @@ li, ul {
   position: relative;
   -webkit-filter: grayscale(100%);
   }
-
 .grid figure img:hover {
   -webkit-filter: grayscale(0%);
   }
 
 .grid figcaption {
   position: absolute;
-  top: 0;
-  padding: 20px;
-  background: #1F999E;
+  background: rgba(0,0,0,0.3);
   color: #666666;
   }
 
 .grid figcaption h3 {
   text-align: center;
-  padding: 5px 0px;
   color: #ffffff;
+  
   }
 
 .grid figcaption h5 {
-  text-align: center;
+  text-align:left;
   margin-top: -10px;
-  color: rgb(216, 216, 216);
+  margin-left:10px;
+  line-height:25px;
+  color: rgb(216, 216, 216,);
   font-weight: bolder;
   }
 
@@ -696,28 +552,21 @@ li, ul {
   right: 5px;
   }
 
-/* Individual Caption Styles */
-
-/* Caption Style 3 */
 .cs-style-3 figure {
   overflow: hidden;
+  
   }
 
 .cs-style-3 figure img {
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  transition: transform 0.4s;
+  -webkit-transition: -webkit-transform 0.7s;
+  -moz-transition: -moz-transform 0.7s;
+  transition: transform 0.7s;
   }
-
-.no-touch .cs-style-3 figure:hover img,
-.cs-style-3 figure.cs-hover img {
-  -webkit-transform: translateY(-50px);
-  -moz-transform: translateY(-50px);
-  -ms-transform: translateY(-50px);
-  transform: translateY(-50px);
-  -webkit-filter: grayscale(0%);
-  }
-
+figure img:hover{
+	transform:scale(1.5);}
+figure h5{
+	color:#FFF;
+	}
 .cs-style-3 figcaption {
   height: 150px;
   text-align: center;
@@ -751,14 +600,6 @@ li, ul {
   }
 
 
-.social-icon{
-  padding-right: 10px;
-  }
-
-.social-icon:hover{
-  color: #666666;
-  cursor: pointer;
-  }
 
 
 /*--------------------------
@@ -770,7 +611,7 @@ li, ul {
   width: 100%;
   height: auto;
   min-height: 690px;
-  background-image:url(../img/bg/green.jpg);
+  background:#06C;
   background-repeat:repeat;
   max-height: 2500px;
   padding-top: 50px;

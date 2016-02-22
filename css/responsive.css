@@ -24,12 +24,6 @@ This is the CSS for Mobile Responsiveness of Ophiuchus Theme
 	padding:0 20px;
 	height: 65px;}
 
-	#subscription{
-  	height: auto;
-  	min-height: 450px;
-  	padding-bottom: 20px;
-  	padding-top: 30px;}
-
   	.footer-icon{
   	padding-right: 5px;
   	font-size: 35px;}
@@ -116,10 +110,6 @@ This is the CSS for Mobile Responsiveness of Ophiuchus Theme
 	-moz-transform: translateY(-55%);
 	transform: translateY(-55%);}
 
-	#subscription{
-  	height: auto;
-  	min-height: 900px;
-  	padding-top: 30px;}
 
   	.footer-icon{
   	padding-right: 5px;
@@ -131,10 +121,6 @@ This is the CSS for Mobile Responsiveness of Ophiuchus Theme
 --------- MAX 768px --------
 --------------------------*/
 @media only screen and (max-width: 768px){
-	#subscription{
-  	height: auto;
-  	min-height: 900px;
-  	padding-top: 30px;}
 
   	.footer-icon{
   	padding-right: 5px;
@@ -193,9 +179,7 @@ This is the CSS for Mobile Responsiveness of Ophiuchus Theme
 
 @media screen and (max-width: 35.6875em) {
 	#home .phone1,
-	#home .phone2,
-	#home .phone3,
-	#home .phone4{
+	#home .phone2{
   	background-image: none;}
 
 	#contact{

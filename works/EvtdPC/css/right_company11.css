@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:"微软雅黑";
+	}
+ul, li {
+	padding: 0 0;
+	margin: 0 0;
+	list-style: none;
+}
+.images {
+	border: 0px;
+}
+.fengexian {
+	float: left;
+	width: 688px;
+	height: 5px;
+	margin-top: 15px;
+}
+.right_company {
+	float: right;
+	width: 688px;
+	height: auto;
+	border:#CCC 1px solid;
+	background: #eaf1fb;
+	
+}
+.right_company_nav {
+	height: 30px;
+	background:#bccbe0;
+}
+.right_company_introduce {
+	float: left;
+	width: 680px;
+	height: auto;
+	margin-top: 10px;
+}
+.right_company_introduce_01 {
+	float: left;
+	width: 200px;
+	height: 20px;
+	margin-left: 10px;
+
+}
+.right_company_introduce_01 a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+.right_company_introduce_02 {
+	float: left;
+	width: 650px;
+	height: auto;
+	margin-left: 15px;
+	margin-top: 5px;
+}
+
+.right_company_adress {
+	float: left;
+	width: 688px;
+	height: auto;
+	margin-top: 10px;
+}
+.right_company_adress_01 {
+	float: left;
+	width: 200px;
+	height: 20px;
+	margin-left: 10px;
+}
+.right_company_adress_01 a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+.right_company_adress_02 {
+	float: left;
+	width: 688px;
+	height: auto;
+}
+.right_company_adress_02_left{
+	float:left;
+	font-size:12px;
+	line-height:20px;
+	margin-left:15px;
+	width:400px;
+	height:auto;
+	margin-top:10px;
+	}
+.right_company_adress_02_right{
+	float:left;
+	width:200px;
+	height:auto;
+	}
+/*company01_end*/
+
+
+
+
+.right_company_develop {
+	float: left;
+	width: 680px;
+	height: auto;
+	margin-top: 10px;
+}
+.right_company_develop_01 {
+	float: left;
+	width: 200px;
+	height: 20px;
+	margin-left: 10px;
+}
+.right_company_develop_01 a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+.right_company_develop_02{
+	float: left;
+	width: 688px;
+	height: auto;
+	margin-top: 5px;
+}
+
+
+/*company 02_end*/
+
+
+
+.right_company_business {
+	float: left;
+	width: 688px;
+	height: auto;
+	margin-top: 10px;
+}
+.right_company_business_01 {
+	float: left;
+	width: 200px;
+	height: 20px;
+	margin-left: 10px;
+}
+.right_company_business_01 a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+.right_company_business_02 {
+	float: left;
+	width: 688px;
+	height: auto;
+	margin-top: 5px;
+}
+
+
+
+.right_company_business_con_top {
+	float: left;
+	width: 688px;
+	height: auto;
+	margin-top: 10px;
+}
+.right_company_business_con_01 {
+	float: left;
+	width: 305px;
+	height: auto;
+	margin-left: 10px;
+}
+.right_company_business_con_02 {
+	float: right;
+	width: 305px;
+	height: auto;
+	margin-right:10px;
+}
+
+.right_company_business_con_bottom {
+	float: left;
+	width: 688px;
+	height: auto;
+	margin-top: 5px;
+}
+.right_company_business_con_03 {
+	float: left;
+	width: 305px;
+	height: auto;
+	margin-left: 10px;
+}
+.right_company_business_con_04 {
+	float: right;
+	width: 305px;
+	height: auto;
+	display: inline;
+	margin-right:10px;
+}
+/**/
+
+
+
+
