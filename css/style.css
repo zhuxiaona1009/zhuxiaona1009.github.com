@@ -561,9 +561,11 @@ li, ul {
   -webkit-transition: -webkit-transform 0.7s;
   -moz-transition: -moz-transform 0.7s;
   transition: transform 0.7s;
+ 
   }
 figure img:hover{
-	transform:scale(1.5);}
+	transform:scale(1.5);
+	}
 figure h5{
 	color:#FFF;
 	}
@@ -663,7 +665,7 @@ figure h5{
 --------------------------*/
 
 #contact{
-  background:#FFF;
+  background:#fff;
   width: 100%;
   height: auto;
   min-height: 550px;
@@ -691,8 +693,9 @@ figure h5{
 .contact-info{
   font-size: 22px;
   font-weight: 100;
-  line-height:30px;
+  line-height:25px;
   -webkit-font-smoothing: antialiased;
-  margin-top:-2px;
+  text-align:left;
+  padding-left:35%;
   }
 
