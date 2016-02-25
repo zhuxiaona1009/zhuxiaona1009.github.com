@@ -3,20 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="author" content="Carol Zhu" />
-<title>Carol Zhu</title>
+<title>zhuzhu-bomb</title>
 <style>
 *{margin:0;padding:0;list-style:none;}
 html{ overflow:hidden;}
-#div1{position:relative;width:700px; height:400px; background:url(img/1.jpg)  no-repeat; margin:100px auto;}
+body{ background:#000;}
+#div1{position:relative;width:700px; height:519px; background:url(img/1.jpg)  no-repeat; margin:50px auto; border:1px solid #F99;}
 #div1 span{position:absolute;left:0;top:0;width:100px; height:100px; background:url(img/0.jpg) no-repeat; background-position:0 0;
-	
 }
-
+#btn{position:absolute; left:50%; top:580px;}
 </style>
 <script>
 window.onload = function(){
-	
 	var oDiv = document.getElementById("div1");
+	var oBtn = document.getElementById("btn");
 	
 	var R = 4;
 	var C = 7;
@@ -25,7 +25,6 @@ window.onload = function(){
 	for(var r = 0; r < R; r++){
 		for(var c = 0; c < C; c++){
 			var oSpan = document.createElement("span");
-			
 			oSpan.style.width = oDiv.offsetWidth/C + "px";
 			oSpan.style.height = oDiv.offsetHeight/R + "px";
 			oDiv.appendChild(oSpan);
@@ -39,7 +38,7 @@ window.onload = function(){
 	var aSpan = oDiv.children;
 	
 	var iNow = 0;
-	oDiv.onclick = function(){
+	oBtn.onclick=oDiv.onclick = function(){
 		for(var i = 0; i < len; i++){
 			aSpan[i].style.transition = "none";
 			aSpan[i].style.transform = "none";
@@ -48,7 +47,7 @@ window.onload = function(){
 		}
 		
 		iNow++;
-		if(iNow == 3){
+		if(iNow == 2){
 			iNow = 0;
 		}
 		oDiv.style.backgroundImage = "url(img/"+iNow+".jpg)";
@@ -63,20 +62,20 @@ window.onload = function(){
 		}
 	};
 	
-	
+
 function rnd(n,m){
 	return Math.floor(Math.random()*(m-n) + n);
 }	
-	
-		
 	
 };
 </script>
 </head>
 
 <body>
+
 <div id="div1">
 	<!--<span></span>-->
 </div>
+<input type="button" id="btn" value="下一张"/>
 </body>
 </html>
