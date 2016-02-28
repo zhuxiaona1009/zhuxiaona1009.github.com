@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="zhuzhu" />
+<title>zhuzhu-drag</title>
+<style>
+body{ background:#000;}
+*{margin:0;padding:0;list-style:none;}
+#btn1{position:absolute; left:10%; top:0px; top:330px; width:100px; height:30px; 
+border-radius:10px; margin-left:-50px;}
+#div1{ position:absolute; width:160px; height:auto; left:10%; margin-left:-80px; top:80px; background:blue; border:1px #999999 solid; border-radius:5px; padding:15px;line-height:30px; color:#FFF;}
+#ul1{width:560px; height:560px; margin:20px auto; border:10px #FFCC33 solid;}
+#ul1 li{float:left; width:140px; height:140px;}
+#ul1 li img{width:100%;}
+</style>
+<script src="domReady.js"></script>
+<script src="move.js"></script>
+<script>
+$(function(){
+	var oUl = document.getElementById("ul1");
+	var aLi = oUl.children;
+	var len = aLi.length;
+	var zIndex = 1;
+	var aPos = [];
+	for(var i = 0; i < len; i++){
+		aPos[i] = {left:aLi[i].offsetLeft,top:aLi[i].offsetTop};
+		aLi[i].style.left = aPos[i].left +　"px";
+		aLi[i].style.top = aPos[i].top + "px";
+	}
+	
+	for(var i = 0; i < len; i++){
+		aLi[i].style.position = "absolute";
+		aLi[i].style.margin = "0";
+		drag(aLi[i]);
+		aLi[i].index = i;
+	}
+	function drag(obj){
+		obj.onmousedown = function(ev){
+			var oEvent = ev || event;
+			var disX = oEvent.clientX - obj.offsetLeft;
+			var disY = oEvent.clientY - obj.offsetTop;
+			obj.style.zIndex = zIndex++;
+			clearInterval(obj.timer);
+			document.onmousemove = function(ev){
+				var oEvent = ev || event;
+				obj.style.left = oEvent.clientX - disX + "px";
+				obj.style.top = oEvent.clientY - disY + "px"; 
+				for(var i = 0; i < len; i++){
+					aLi[i].className = "";
+				}
+				
+				var oNear = findMin(obj);
+				
+				//oNear && (oNear.className = "box");
+			};
+			
+			document.onmouseup = function(){
+				document.onmousemove = null;
+				document.onmouseup = null;
+				obj.releaseCapture && obj.releaseCapture();
+				
+				var oNear = findMin(obj);
+				if(oNear){
+					var tmp = obj.index;
+					obj.index = oNear.index;
+					oNear.index = tmp;
+					move(oNear,aPos[oNear.index]); 
+				}
+				
+				 move(obj,aPos[obj.index]);
+			};
+			obj.setCapture && obj.setCapture();
+			return false;	
+		};
+	}
+	function findMin(obj){
+		var iMin = 99999999;
+		var iMinIndex = -1;
+		for(var i = 0; i < len; i++){
+			if(obj == aLi[i]) continue;
+			if(collTest(obj,aLi[i])){
+				var dis = getDis(obj,aLi[i]);
+				if(iMin > dis){
+					iMin = dis;
+					iMinIndex = i;
+				}
+				
+			}
+		}
+		if(iMinIndex == -1){
+			return null;
+		}
+		return aLi[iMinIndex];
+	}	
+	function getDis(obj1,obj2){
+		var a = obj1.offsetLeft - obj2.offsetLeft;
+		var b = obj1.offsetTop - obj2.offsetTop;
+		return Math.sqrt(a*a + b*b);
+	}
+	
+	function collTest(obj1,obj2){
+		var l1 = obj1.offsetLeft;
+		var t1 = obj1.offsetTop;
+		var r1 = l1 + obj1.offsetWidth;
+		var b1 = t1 + obj1.offsetHeight;
+		
+		var l2 = obj2.offsetLeft;
+		var t2 = obj2.offsetTop;
+		var r2 = l2 + obj2.offsetWidth;
+		var b2 = t2 + obj2.offsetHeight;
+		if(r1 < l2 || b1 < t2 || l1 > r2 || t1 > b2){
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	var oBtn = document.getElementById("btn1");
+	oBtn.onclick = function(){
+		aPos.sort(function(){
+			return Math.random() - 0.5;
+		});
+		
+		for(var i = 0; i < len; i++){
+			aLi[i].index = i;
+			move(aLi[i],aPos[i]);
+		}
+			
+	};
+	
+});
+</script>
+</head>
+
+<body>
+<input id="btn1" type="button" value="随机换一下"/>
+<div id="div1">拼图小游戏说明:<br/>1.看右侧图片;<br/>2.点击"随机换一下";<br/>3.拖拽图片开始拼图;<br/>4.重新开始请按键盘上F5键。</div>
+<div id="box">
+<ul id="ul1">
+	<li><img src="images/01.jpg" /></li>
+	<li><img src="images/02.jpg" /></li>
+	<li><img src="images/03.jpg" /></li>
+	<li><img src="images/04.jpg" /></li>
+	<li><img src="images/05.jpg" /></li>
+	<li><img src="images/06.jpg" /></li>
+	<li><img src="images/07.jpg" /></li>
+	<li><img src="images/08.jpg" /></li>
+	<li><img src="images/09.jpg" /></li>
+    <li><img src="images/10.jpg" /></li>
+    <li><img src="images/11.jpg" /></li>
+	<li><img src="images/12.jpg" /></li>
+	<li><img src="images/13.jpg" /></li>
+	<li><img src="images/14.jpg" /></li>
+	<li><img src="images/15.jpg" /></li>
+	<li><img src="images/16.jpg" /></li>
+</ul>
+</div>
+</body>
+</html>

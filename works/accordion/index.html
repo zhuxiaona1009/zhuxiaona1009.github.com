@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="copyright" content="Carol Zhu" />
-<title>Carol Zhu</title>
+<title>zhuzhu-accordion</title>
 <style>
 * {margin:0; padding:0; list-style:none; background:#000;}
-#div1 {width:594px; height:744px; border:1px solid black; margin:100px auto; position:relative; overflow:hidden;}
+#div1 {width:574px; height:744px; border:1px solid #666; margin:10px auto; position:relative; overflow:hidden;}
 #div1 span {width:20px; height:744px; display:block; position:absolute; left:0; top:0;}
-#div1 div {width:494px; height:744px; position:absolute; left:0; top:0; background:#CCC; }
+#div1 div {width:494px; height:744px; position:absolute; left:0; top:0; -background:#CCC; color:#fff; line-height:600px; text-align:center;} 
 </style>
 <script>
 window.onload=function(){
@@ -20,13 +20,8 @@ window.onload=function(){
 		aDiv[i].onmouseover=function(){
 			for(var i=1;i<aDiv.length;i++){
 				if(i<=this.index){
-					//←		left=i*span.w
-					
-					//aDiv[i].style.left=i*20+'px';
 					move(aDiv[i],{left:i*20},{time:1000});
 				}else{
-					//→		div.w+(i-1)*span.w
-					//aDiv[i].style.left=840+(i-1)*20+'px';
 					move(aDiv[i],{left:494+(i-1)*20},{time:1000});
 				}
 			}
@@ -90,12 +85,11 @@ function getStyle(obj,attr){
 
 <body>
 <div id="div1">
-	<div class="active"><img src="images/1.jpg" /><span style="background:#C00;">第1项</span></div>
-	<div><img src="images/1.jpg" /><span style="background:#0fc;">第2项</span></div>
-	<div><img src="images/2.jpg" /><span style="background:#af0;">第3项</span></div>
-	<div><img src="images/3.jpg" /><span style="background:#c0f;">第4项</span></div>
-	<div><img src="images/4.jpg" /><span style="background:#e0f;">第5项</span></div>
-	<div><img src="images/1.jpg" /><span style="background:#a90;">第6项</span></div>
+	<div class="active"><img src="images/4.jpg" /><span style="background:#333;">1</span></div>
+	<div><img src="images/1.jpg" /><span style="background:#444">2</span></div>
+	<div><img src="images/2.jpg" /><span style="background:#555">3</span></div>
+	<div><img src="images/3.jpg" /><span style="background:#666">4</span></div>
+	<div><img src="images/4.jpg" /><span style="background:#777">5</span></div>
 </div>
 </body>
 </html>

@@ -10,7 +10,6 @@
 	#navigation{
 	padding:0 20px;
 	height: 65px;}
-
   	.footer-icon{
   	padding-right: 5px;
   	font-size: 35px;}
@@ -25,7 +24,6 @@
 	display: block;}
 	.not-visible-nav{
 	opacity:0;}
-
 	#navigation .nav-menu{
 	display:none;
 	height: auto;
@@ -35,12 +33,10 @@
 	position: absolute;
 	background:rgba(255, 255, 255, 0.97) !important;
 	box-shadow: 0px 1px 4px rgba(0,0,0, 0.1);}
-
 	#navigation ul.nav li{
 	display:inline-block;
 	height:auto;
 	width:100%;}
-
 	#navigation ul.nav li a{
 	display:block;
 	height: auto;
@@ -49,16 +45,9 @@
 	color: #555555;
 	border-top:1px solid #fff;
 	line-height: 40px;}
-
 	#navigation ul.nav li a:hover,
 	#navigation ul.nav li.active a{
 	border-top:1px solid #fff;}
-
-	#subscription{
-  	height: auto;
-  	min-height: 850px;
-  	padding-top: 20px;}
-
   	.footer-icon{
   	padding-right: 5px;
   	font-size: 35px;}
@@ -67,36 +56,31 @@
 	#navigation{
 	padding:0 20px;
 	height: 55px;}
-
 	.nav-logo a.logo img{
   	height: 35px;}
-
   	.nav-logo {
 	top: 0%;
 	-webkit-transform: translateY(-55%);
 	-moz-transform: translateY(-55%);
 	transform: translateY(-55%);}
-
-
   	.footer-icon{
   	padding-right: 5px;
   	font-size: 25px;}
   	}
 @media only screen and (max-width: 768px){
-
   	.footer-icon{
   	padding-right: 5px;
   	font-size: 35px;}
 	}
 @media only screen and (max-width: 640px){
-	.contact-info{
+.contact-info{
   text-align:left;
   padding-left:20%;
   font-size:18px;
   }
 
 #project {
-	height: auto;
+  height: auto;
   min-height: 2000px;
   }
 
@@ -104,20 +88,21 @@
 
 }
 @media only screen and (max-width: 480px){
-	.contact-info{
+  .contact-info{
   text-align:left;
   padding-left:0;
   font-size:16px;
   padding-left:10%;
   }
+  .contact{ margin-bottom:0px;}
 }
 @media only screen and (max-width: 360px){
-	.contact-info{
+  .contact-info{
   text-align:left;
-  padding-left:0;
   font-size:16px;
   padding-left:5%;
   }
+  .contact{ margin-bottom:0px;}
 	}
 @media only screen and (max-width: 320px){
 	.contact-info{
@@ -126,6 +111,7 @@
   font-size:16px;
   padding-left:5%;
   }
+   .contact{ margin-bottom:0px;}
 	}
 
 
@@ -178,7 +164,7 @@
   	background-image: none;}
 
 	#contact{
-  	padding-bottom: 20px;
+  	-padding-bottom: 20px;
   	padding-top: 20px;}
 
 

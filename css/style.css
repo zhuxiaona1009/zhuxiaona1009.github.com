@@ -123,11 +123,10 @@ li, ul {
   color: inherit;
   background: none;
   cursor: pointer;
-  padding: 15px 60px;
+  padding: 10px 40px;
   display: inline-block;
   margin: 5px 5px;
-/*  text-transform: uppercase;
-*/  letter-spacing: 1px;
+ letter-spacing: 1px;
   font-weight: 300;
   outline: none;
   position: relative;
@@ -135,6 +134,7 @@ li, ul {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   text-align:center;
+  border-radius:5px;
   }
 
 .btn:after {
@@ -159,23 +159,21 @@ li, ul {
   }
 
 .btn-c{
-  background: #666666;
+  background:-webkit-linear-gradient(#CCC,#666,#CCC);
+  border:1px solid #999;
   color: #fff;
   }
 
 .btn-c:hover {
-  background: #818181;
-  color: #f3f3f3;
+  background:-webkit-linear-gradient(#666,#999,#666);
   }
 
 .btn-e {
-  background: #209196;
-  color: #fff;
+  background:-webkit-linear-gradient(#CCC,#666,#CCC);
   }
 
 .btn-e:hover {
-  background:#03a4aa;
-  color: #f3f3f3;
+  background:-webkit-linear-gradient(#666,#999,#666);
   }
 
 #navigation {
@@ -312,11 +310,11 @@ li, ul {
   }
 
 #home .slider1{
-  background:#36C;
+  background:-webkit-linear-gradient(#33C,#36F,#3CF);
   }
 
 #home .slider2{
-  background:#C90;
+  background:-webkit-linear-gradient(#F30,#FC3);
   }
 
 #home .phone1{
@@ -649,7 +647,7 @@ figure h5{
   max-height: 2000px;
   background-size: cover;
   color: #666666;
-  padding-bottom: 40px;
+ padding-bottom: 40px;
   padding-top: 80px;
   }
 
@@ -666,13 +664,13 @@ figure h5{
   font-weight: 300;
   color: #666666;
   }
-
 .contact-info{
   font-size: 18px;
   font-weight: 100;
   line-height:25px;
   -webkit-font-smoothing: antialiased;
   text-align:left;
-  padding-left:30%;
+  padding-left:35%;
+  margin-bottom:10px;
   }
 
