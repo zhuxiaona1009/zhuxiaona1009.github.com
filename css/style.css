@@ -34,7 +34,6 @@ h2 {
   font-size: 36px;
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
-  /*text-transform: uppercase;*/
   }
 
 h3 {
@@ -640,13 +639,13 @@ figure h5{
   }
 
 #contact{
-  background:#fff;
+  background:url(../img/bg/contact.jpg) center center repeat;
   width: 100%;
   height: auto;
   min-height: 550px;
   max-height: 2000px;
   background-size: cover;
-  color: #666666;
+  color: #000;
  padding-bottom: 40px;
   padding-top: 80px;
   }

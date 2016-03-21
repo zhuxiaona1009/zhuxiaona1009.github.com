@@ -17,7 +17,7 @@
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
+ 
   40% {
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
