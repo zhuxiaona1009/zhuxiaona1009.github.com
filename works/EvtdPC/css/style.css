@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+html{ font-size:20px;}
+body{font-family: Arial, Helvetica, sans-serif;}
+h5{font-size:0.8rem;};
+
+
+
+#div1 {
+	position: relative;
+	width: 16rem;
+	height:29em;
+	overflow: hidden;
+}
+
+.top{
+	position:absolute;
+	width:16rem;
+	height:5rem;
+	}
+.logo{
+	width:8rem;
+	height:4rem;
+	}
+.logo img{width:6rem;
+padding:1rem 0.5rem;
+}
+.language { 
+	position:absolute;
+	width:7rem;
+	height:1.5rem;
+	right:0%;  
+	padding-right:1rem;
+	margin-top:-3.5rem;
+	
+}
+.language a {
+	color:#666;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.8rem;
+	display: block;
+	line-height:2rem;
+	text-align:right;
+}
+.language ul {
+	display:none;
+	list-style:none;
+}
+.language:hover ul {
+	display: block;
+	width: 7.5rem;
+	height:auto;
+	z-index:2;
+	position:absolute;
+	background:#fefdfd;
+	color:#FFF;
+	float:right;
+	margin-top:-0.4rem;
+	list-style:none;
+	margin-right:-0.5rem;
+}
+.language ul li{
+	z-index:3;
+	line-height:2.5rem;
+	text-align:center;
+	
+	
+}
+.language ul li a{
+	line-height:2.5rem;
+	text-align:center;
+	color:#000;
+	border-bottom:0.1rem #f8eeee solid;
+	
+}
+.language ul li a:hover{
+	color:blue;}
+	
+.banner{ 
+  width:16rem;
+  height:7rem;
+  margin-top:5rem;
+ position:absolute;
+}	
+
+
+.about{ width:16rem;
+height:6rem;
+margin-top:0.2rem;
+background:#930;}	
+	
+.about img{ width:16rem;}
+
+
+
+.nav{
+	position:absolute;
+	width:16rem;
+	height:8.5rem;
+	background:#09F;
+	margin-top:13rem;
+	font-size:0.8rem;
+	}	
+
+.nav ul{ width:16rem;
+         height:auto;
+}
+
+.nav ul li{
+	float:left;
+	width:7rem;
+	height:1.5rem;
+	margin-top:1rem;
+	line-height:1.5rem;
+	margin-left:0.5rem;
+	margin-right:0.5rem;
+	}
+
+.nav ul li a{ text-decoration:none; font-size:0.7rem; color:#FFF;}
+.nav ul li a img {
+	width:1.5rem;
+	float: left;
+	display: inline-block;
+    margin: 0 0.2rem 0 0.2rem;
+}
+.nav ul li a:hover {
+	color: blue;
+}
+
+
+.news{
+	width:16rem;
+	position:absolute;
+	height:5rem;
+	font-size:0.7rem;
+	margin-top:22rem;
+	}	
+.news ul{
+	float:left;
+	width:16rem;}
+	
+.news ul li{
+	width:14rem;
+	margin-left:1rem;
+	margin-right:1rem;
+	
+	margin-top:0.7rem;
+	}	
+	
+.brand{
+position:absolute; 
+width:16rem;
+height:1rem;
+background:#09F;
+margin-top:28rem;
+font-size:0.6rem;
+line-height:1rem;
+text-align:center;}	
+	
+	
+	
+	
+	

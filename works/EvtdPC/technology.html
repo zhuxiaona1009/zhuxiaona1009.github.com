@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link type="text/css" rel="stylesheet" href="css/common.css"/>
+<link type="text/css" rel="stylesheet" href="css/company.css"/>
+<script>
+window.onresize=window.onload=function(){
+	var rem = 20;
+	rem = 20/320*window.innerWidth;
+	document.documentElement.style.fontSize = rem + "px";
+	}
+</script>
+</head>
+
+<body>
+<div class="company">
+
+<div class="header">
+  <div class="backhome"><a href="index.html"><img src="img/nav/home.png"/></a></div>
+  <div class="nav_home"><a href="javascript:;" ><img src="img/nav/home1.png"/></a>
+    <ul>
+      <li><a href="company.html" ><img src="img/nav/nav_home01.png"/>关于我们</a></li>
+      <li><a href="apply.html" ><img src="img/nav/nav_home02.png"/>应用领域</a></li>
+      <li><a href="product.html" ><img src="img/nav/nav_home03.png"/>产品展示</a></li>
+      <li><a href="javascript:;" ><img src="img/nav/nav_home04.png"/>技术资料</a></li>
+      <li><a href="recruit.html" ><img src="img/nav/nav_home05.png"/>人才招聘</a></li>
+      <li><a href="contact.html" ><img src="img/nav/nav_home06.png"/>联系我们</a></li>
+    </ul>
+  </div>
+</div>
+
+
+ <div class="pages_container">
+ 	<h3 class="page_title">技术资料</h3>   
+    <div class="apply">
+    <div class="apply_box">
+      <div class="apply_content">
+        <h4>BMS产品的功能及构造</h4>
+         <p> <strong>1.主控部分的主要功能：</strong><br/>
+          □ 检测功能（电池组电流值）;<br/>
+          □ 各种演算功能（单体电池容量计算、SOC计算、SOH计算）;<br/>
+          □ 各种控制功能（控制对象：充电器、继电器等。控制方法：数字 I/O
+          （驱动电源、光电耦合器等）、CAN、模拟输出、继电器驱动器等）;<br/>
+          □ 单体电池温度控制功能（Fan、Heater，最多各4ch）;<br/>
+          □ 与外部机器（VCU等）的通信功能（CAN）;<br/>
+          □ 报警功能（通过CAN通信或数字I/O发出报警）;<br/>
+          □ 数据记录功能（SOC、电池充放电次数、异常记录、电池组信息、生产信息等)<br/>
+          □ 自我诊断功能（看门狗计时器、CPU・CAN通信・内存检测、漏电检测等）<br/>
+        <div class="apply_image radius4"><img  src="img/tech/technology11.jpg"  border="0"/></div>
+        <strong>2.从控部分的主要功能：</strong><br/>
+        □ 检测功能（电压：12ch，温度：最大13ch，其中单体电池12ch，剩余的1ch用于电池系统）<br/>
+        □ 单体电池均衡功能（被动均衡：300mA）<br/>
+        □ 单体电池均衡功能（选配主动均衡：1.5A）<br/>
+        □ 自我诊断功能（电压、温度传感线的断线检测）电检测等）<br/>
+        <div class="apply_image radius4"><img  src="img/tech/technology12.jpg"  border="0"/></div>
+        <strong>3.电压、温度检测的三重保障：</strong> <br/>
+        □BSU上的IC内部具有检测电池电压及热敏电阻的双重电压检测功能，同时还在IC外部追加了外部电压检测功能（以每个BSU为单位）。<br/>
+        □先在IC内部对电压值进行自我比较，确认没有异常后，再通过外部电压检测功能确认IC是否正常，以保证检测到的电压值的准确性。
+        </p>
+      </div>
+    </div>
+    
+    <div class="apply_box"><div class="apply_content">
+        <h4>电池均衡方式比较</h4>
+         <p> <strong>1.采用被动均衡的BMS</strong><br/>
+          Passive Balancing Solution<br/>
+          【采用被动均衡的BMS】均衡电流 0.1A，通过电阻进行被动均衡电检测等）。<br/>
+        <div class="apply_image radius4"><img  src="img/tech/technology21.jpg"  border="0"/></div>
+        <strong>2.采用主动均衡的BMS</strong> <br/>
+        Active Balancing Solution<br/>
+        【采用主动均衡的BMS】均衡电流1.5A，通过转移方式进行主动均衡;<br/>
+        《主动均衡的最大优势》 电池系统中所有单体电池的剩余容量都能得到充分利用，从而使电池系统的性能实现最大化。
+        <div class="apply_image radius4"><img  src="img/tech/technology22.jpg"  border="0"/></div>
+        </p>
+      </div>
+    </div>
+    
+    <div class="apply_box"><div class="apply_content">
+        <h4>电池二次利用技术</h4>
+         <p> EVTD自主研发了电池二次利用技术，可以通过均衡和控制使已经用过的电池得以二次利用，提高电池的使用率。在降低电池利用成本的同时，节约宝贵的资源。
+        <div class="apply_image radius4"><img  src="img/tech/technology23.jpg"  border="0"/></div>
+        </p>
+      </div>
+    </div>
+    
+      <div class="brand">Copyright @ EVTD. All rights reserved</div>
+	</div>
+  </div>
+
+</div>
+</body>
+</html>

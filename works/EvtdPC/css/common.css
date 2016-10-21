@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html{ font-size:20px;}
+body{font-family: Arial, Helvetica, sans-serif;}
+h1{};
+h2{};
+h4{font-size:0.9rem;}
+h5{font-size:0.8rem;}
+h6{};
